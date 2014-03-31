@@ -1,4 +1,6 @@
-.. toctree::
-   :maxdepth: 1
+Contents:
 
-   helloworld
+.. toctree::
+   :maxdepth: 2
+
+   example
