@@ -5,5 +5,5 @@
 完美的dota体验，为了在pc落寞的时代，可以让所有人在移动平台重新点燃dota的激情！
 
 .. image:: _static/dota-heros.jpg
-   :width: 1000
-   :height: 800
+   :width: 900
+   :height: 600
