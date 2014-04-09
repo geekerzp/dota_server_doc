@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>框架结构 &mdash; DotaServerDoc 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="DotaServerDoc 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="架构" href="frame.html" />
+    <link rel="next" title="通信" href="communication.html" />
+    <link rel="prev" title="服务器架构" href="server-structure.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="communication.html" title="通信"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="server-structure.html" title="服务器架构"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="frame.html" accesskey="U">架构</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>框架结构<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li><em>appmain.py</em> 是进程的启动脚本，<em>startmaster.py</em> 是服务器启动脚本，<em>config.json</em> 是服务器配置文件。</li>
+<li><em>doc/</em> 是程序的文档目录。</li>
+<li><em>sql/</em> 是数据库脚本。</li>
+<li><em>test/</em> 是测试目录。</li>
+<li><em>app/</em> 是程序的主要目录。</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><em>dbfront/</em> 是数据读写，持久化进程。</li>
+<li><em>net/</em> 是网络进程。</li>
+<li><em>gate/</em> 是登陆，注销，请求路由进程。</li>
+<li><em>dota/</em> 是dota卡牌战斗游戏进程。</li>
+<li><em>pvp/</em> 是pvp实时战斗游戏进程。</li>
+<li><em>game/</em> 是ECS游戏实体建模。</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><em>components/</em> 是游戏组件。</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><em>arena/</em> 战役组件。</li>
+<li><em>attribute/</em> 属性组件。</li>
+<li><em>baseInfo/</em> 实体基础信息组件。</li>
+<li><em>finance/</em> 货币组件。</li>
+<li><em>level/</em> 等级组件。</li>
+<li><em>matrix/</em> 阵法组件。</li>
+<li><em>pack/</em> 包裹组件。</li>
+<li><em>pet/</em> 宠物组件。</li>
+<li><em>profession/</em> 职业组件。</li>
+<li><em>skill/</em> 技能组件。</li>
+<li><em>zhanyi/</em> 战役组件。</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li><em>entities/</em> 是游戏实体。</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><em>character/</em> 角色类实体。</li>
+<li><em>pack/</em> 包裹类实体。</li>
+<li><em>item.py</em> 物品实体。</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li><em>systems/</em> 是游戏系统。</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><em>eventmachine/</em> 事件处理系统。</li>
+<li><em>fight/</em> 战斗系统。</li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple">
+<li><em>logs/</em> 是日志记录目录。</li>
+<li><em>share/</em> 是进程间共享类库。</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><em>dbopear/</em> 是数据库操作类库。</li>
+<li><em>queue_service.py</em> 是进程间通信协议类。</li>
+<li><em>util.py</em> 是工具类。</li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="server-structure.html"
+                        title="previous chapter">服务器架构</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="communication.html"
+                        title="next chapter">通信</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/frame-structure.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="communication.html" title="通信"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="server-structure.html" title="服务器架构"
+             >previous</a> |</li>
+        <li><a href="index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="frame.html" >架构</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, geekerzp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

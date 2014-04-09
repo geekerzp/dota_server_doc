@@ -1,0 +1,54 @@
+框架结构
+========
+#. *appmain.py* 是进程的启动脚本，*startmaster.py* 是服务器启动脚本，*config.json* 是服务器配置文件。
+#. *doc/* 是程序的文档目录。
+#. *sql/* 是数据库脚本。
+#. *test/* 是测试目录。
+#. *app/* 是程序的主要目录。
+
+  1. *dbfront/* 是数据读写，持久化进程。
+  2. *net/* 是网络进程。
+  3. *gate/* 是登陆，注销，请求路由进程。
+  4. *dota/* 是dota卡牌战斗游戏进程。
+
+     其中，在*gatenodeapp/* 中是接口定义，在*appinterface* 中是接口的逻辑实现，
+     在*core/* 中是游戏进程的相关逻辑实现。
+
+  5. *pvp/* 是pvp实时战斗游戏进程。
+
+     其中，在*gatenodeapp/* 中是接口定义，在*appinterface* 中是接口的逻辑实现，
+     在*core/* 中是游戏进程的相关逻辑实现。
+
+  6. *game/* 是ECS游戏实体建模。
+
+    1. *components/* 是游戏组件。
+
+      #. *arena/* 战役组件。
+      #. *attribute/* 属性组件。
+      #. *baseInfo/* 实体基础信息组件。
+      #. *finance/* 货币组件。
+      #. *level/* 等级组件。
+      #. *matrix/* 阵法组件。
+      #. *pack/* 包裹组件。
+      #. *pet/* 宠物组件。
+      #. *profession/* 职业组件。
+      #. *skill/* 技能组件。
+      #. *zhanyi/* 战役组件。
+
+    2. *entities/* 是游戏实体。
+
+      #. *character/* 角色类实体。
+      #. *pack/* 包裹类实体。
+      #. *item.py* 物品实体。
+
+    3. *systems/* 是游戏系统。
+
+      #. *eventmachine/* 事件处理系统。
+      #. *fight/* 战斗系统。
+
+  7. *logs/* 是日志记录目录。
+  8. *share/* 是进程间共享类库。
+
+    #. *dbopear/* 是数据库操作类库。
+    #. *queue_service.py* 是进程间通信协议类。
+    #. *util.py* 是工具类。
