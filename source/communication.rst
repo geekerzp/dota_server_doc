@@ -1,11 +1,10 @@
 通信
 ========
+.. toctree::
+   :maxdepth: 2
 
-简介
-----
+   communication-intro
 
-通信格式
----------
+   communication-format
 
-API文档
---------
+   communication-api
