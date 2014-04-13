@@ -12,6 +12,8 @@
        'password': 'xxx'
    }
 
+#. 'username'是游戏用户用户名。
+#. 'password'是游戏用户密码。
 
 *response*
 
@@ -28,5 +30,8 @@
      }
    }
 
-
+#. 'result'是请求执行结果。
+#. 'userId'是用户id。
+#. 'hasRole'是用户是否已经创建游戏角色。
+#. 'characterId'是用户游戏角色id。
 
