@@ -1,0 +1,28 @@
+9002选择英雄加入战斗
+====================
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'characterId': xxx,
+        'playerId': xxx
+    }
+
+#. 'characterId'角色id。
+#. 'playerId'英雄id。
+
+*response*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'result': True of False,
+        'message': 'xxx'
+    }
+
+#. 'result'请求结果。
+#. 'message'请求提示信息。

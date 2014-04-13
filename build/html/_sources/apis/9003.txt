@@ -1,0 +1,30 @@
+9003角色进入对战房间
+====================
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'characterId': xxx,
+        'roomId': xxx,
+        'target': xxx
+    }
+
+#. 'characterId'角色id。
+#. 'roomId'房间id。
+#. 'target'加入方阵，天灾或近卫。
+
+*response*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'result': True or False,
+        'message': xxx
+    }
+
+#. 'result'请求结果。
+#. 'message'请求提示信息。

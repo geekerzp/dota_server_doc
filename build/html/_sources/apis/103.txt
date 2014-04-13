@@ -1,4 +1,4 @@
-103玩家登陆游戏场景
+103角色登陆游戏场景
 ===================
 
 *request*
@@ -12,14 +12,18 @@
         'sceneType': 'dota' or 'pvp'
     }
 
+#. 'userId'是用户id。
+#. 'characterId'是用户角色id。
+#. 'sceneType'是游戏场景类型，可选择为'pvp'或者为'dota'。
+
 *response*
 
 .. code-block:: json
    :linenos:
 
     {
-        'message': 'xxx',
         'result': true,
+        'message': 'xxx',
         'data': {
             'name': 'xxx',
             'cid', x,
@@ -30,3 +34,13 @@
             'yuanbao': xxx
         }
     }
+
+#. 'result'是用户id。
+#. 'message'是请求提示信息。
+#. 'name'是角色昵称。
+#. 'cid'是角色id。
+#. 'level'是角色等级。
+#. 'maxexp'是角色最大经验值。
+#. 'exp'是角色经验值。
+#. 'coin'是金币。
+#. 'yuanbao'是元宝。

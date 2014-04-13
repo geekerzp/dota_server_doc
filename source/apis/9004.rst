@@ -1,0 +1,30 @@
+9004创建对战房间
+================
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'characterId': xxx
+    }
+
+#. 'characterId'角色id。
+
+*response*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'message': 'create room successfully',
+        'result': True,
+        'data': {
+            'roomId': xxx
+        }
+    }
+
+#. 'message'请求提示信息。
+#. 'result'请求结果。
+#. 'roomId'对战房间id。

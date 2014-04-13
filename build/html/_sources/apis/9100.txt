@@ -1,0 +1,19 @@
+9100时间同步
+============
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+
+    {
+        'characterId': xxx,
+        'roomId': xxx,
+        'clientTime': xxx 客户端时间,
+        'virtualTime': xxx 客户端和服务器同步的虚拟时间
+    }
+
+#. 'characterId'游戏角色id。
+#. 'roomId'对战房间id。
+#. 'virtualTime'客户端可服务器同步的虚拟时间，首次发送对时包时为0。

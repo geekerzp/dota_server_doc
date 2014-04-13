@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>101用户登陆服务器 &mdash; DotaServerDoc 1.0.1 documentation</title>
+    <title>9008普通攻击事件 &mdash; DotaServerDoc 1.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="DotaServerDoc 1.0.1 documentation" href="../index.html" />
     <link rel="up" title="APIs" href="../communication-api.html" />
-    <link rel="next" title="103角色登陆游戏场景" href="103.html" />
-    <link rel="prev" title="APIs" href="../communication-api.html" /> 
+    <link rel="next" title="9004创建对战房间" href="9004.html" />
+    <link rel="prev" title="9001移动事件" href="9001.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,10 +36,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="103.html" title="103角色登陆游戏场景"
+          <a href="9004.html" title="9004创建对战房间"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../communication-api.html" title="APIs"
+          <a href="9001.html" title="9001移动事件"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>
@@ -53,22 +53,8 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>101用户登陆服务器<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>9008普通攻击事件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><em>request</em></p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="highlight"><pre>{
-    &#39;username&#39;: &#39;xxx&#39;,
-    &#39;password&#39;: &#39;xxx&#39;
-}
-</pre></div>
-</td></tr></table></div>
-<ol class="arabic simple">
-<li>&#8216;username&#8217;是游戏用户用户名。</li>
-<li>&#8216;password&#8217;是游戏用户密码。</li>
-</ol>
-<p><em>response</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -76,21 +62,24 @@
 5
 6
 7
-8</pre></div></td><td class="code"><div class="highlight"><pre>{
-  &#39;result&#39;: True or False,
-  &#39;data&#39;: {
-      &#39;userId&#39;: &#39;xxx&#39;,
-      &#39;hasRole&#39;: True or False,
-      &#39;characterId&#39;: &#39;xxx&#39;
-  }
-}
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre> request: {
+     &#39;characterId&#39;: xxx,
+     &#39;roomId&#39;: xxx,
+     &#39;data&#39;: {
+         &#39;timestamp&#39;: xxx,
+         &#39;actorId&#39;: xxx,
+         &#39;enemyId&#39;: xxx
+     }
+ }
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>&#8216;result&#8217;是请求执行结果。</li>
-<li>&#8216;userId&#8217;是用户id。</li>
-<li>&#8216;hasRole&#8217;是用户是否已经创建游戏角色。</li>
-<li>&#8216;characterId&#8217;是用户游戏角色id。</li>
+<li>&#8216;characterId&#8217;角色id。</li>
+<li>&#8216;roomId&#8217;对战房间id。</li>
+<li>&#8216;timestamp&#8217;时间戳，和服务器对时后的虚拟时间。</li>
+<li>&#8216;actorId&#8217;攻击者战场id。</li>
+<li>&#8216;enemyId&#8217;被攻击者战场id。</li>
 </ol>
 </div>
 
@@ -101,14 +90,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../communication-api.html"
-                        title="previous chapter">APIs</a></p>
+  <p class="topless"><a href="9001.html"
+                        title="previous chapter">9001移动事件</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="103.html"
-                        title="next chapter">103角色登陆游戏场景</a></p>
+  <p class="topless"><a href="9004.html"
+                        title="next chapter">9004创建对战房间</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/apis/101.txt"
+    <li><a href="../_sources/apis/9008.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -135,10 +124,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="103.html" title="103角色登陆游戏场景"
+          <a href="9004.html" title="9004创建对战房间"
              >next</a> |</li>
         <li class="right" >
-          <a href="../communication-api.html" title="APIs"
+          <a href="9001.html" title="9001移动事件"
              >previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>

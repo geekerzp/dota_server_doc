@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>103玩家登陆游戏场景 &mdash; DotaServerDoc 1.0.1 documentation</title>
+    <title>103角色登陆游戏场景 &mdash; DotaServerDoc 1.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="DotaServerDoc 1.0.1 documentation" href="../index.html" />
     <link rel="up" title="APIs" href="../communication-api.html" />
-    <link rel="next" title="数据" href="../data.html" />
+    <link rel="next" title="9100时间同步" href="9100.html" />
     <link rel="prev" title="101用户登陆服务器" href="101.html" /> 
   </head>
   <body>
@@ -36,7 +36,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../data.html" title="数据"
+          <a href="9100.html" title="9100时间同步"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="101.html" title="101用户登陆服务器"
@@ -53,7 +53,7 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>103玩家登陆游戏场景<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>103角色登陆游戏场景<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><em>request</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -66,6 +66,11 @@
  }
 </pre></div>
 </td></tr></table></div>
+<ol class="arabic simple">
+<li>&#8216;userId&#8217;是用户id。</li>
+<li>&#8216;characterId&#8217;是用户角色id。</li>
+<li>&#8216;sceneType&#8217;是游戏场景类型，可选择为&#8217;pvp&#8217;或者为&#8217;dota&#8217;。</li>
+</ol>
 <p><em>response</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -80,8 +85,8 @@
 11
 12
 13</pre></div></td><td class="code"><div class="highlight"><pre> {
-     &#39;message&#39;: &#39;xxx&#39;,
      &#39;result&#39;: true,
+     &#39;message&#39;: &#39;xxx&#39;,
      &#39;data&#39;: {
          &#39;name&#39;: &#39;xxx&#39;,
          &#39;cid&#39;, x,
@@ -94,6 +99,17 @@
  }
 </pre></div>
 </td></tr></table></div>
+<ol class="arabic simple">
+<li>&#8216;result&#8217;是用户id。</li>
+<li>&#8216;message&#8217;是请求提示信息。</li>
+<li>&#8216;name&#8217;是角色昵称。</li>
+<li>&#8216;cid&#8217;是角色id。</li>
+<li>&#8216;level&#8217;是角色等级。</li>
+<li>&#8216;maxexp&#8217;是角色最大经验值。</li>
+<li>&#8216;exp&#8217;是角色经验值。</li>
+<li>&#8216;coin&#8217;是金币。</li>
+<li>&#8216;yuanbao&#8217;是元宝。</li>
+</ol>
 </div>
 
 
@@ -106,8 +122,8 @@
   <p class="topless"><a href="101.html"
                         title="previous chapter">101用户登陆服务器</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="../data.html"
-                        title="next chapter">数据</a></p>
+  <p class="topless"><a href="9100.html"
+                        title="next chapter">9100时间同步</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/apis/103.txt"
@@ -137,7 +153,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../data.html" title="数据"
+          <a href="9100.html" title="9100时间同步"
              >next</a> |</li>
         <li class="right" >
           <a href="101.html" title="101用户登陆服务器"

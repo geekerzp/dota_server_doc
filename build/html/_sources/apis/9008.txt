@@ -1,0 +1,23 @@
+9008普通攻击事件
+================
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+    request: {
+        'characterId': xxx,
+        'roomId': xxx,
+        'data': {
+            'timestamp': xxx,
+            'actorId': xxx,
+            'enemyId': xxx
+        }
+    }
+
+#. 'characterId'角色id。
+#. 'roomId'对战房间id。
+#. 'timestamp'时间戳，和服务器对时后的虚拟时间。
+#. 'actorId'攻击者战场id。
+#. 'enemyId'被攻击者战场id。

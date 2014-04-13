@@ -1,0 +1,15 @@
+9007角色准备
+============
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        'characterId': xxx,
+        'roomId': xxx
+    }
+
+#. 'characterId'角色id。
+#. 'roomId'对战房间id。
