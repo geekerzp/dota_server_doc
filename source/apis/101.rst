@@ -1,0 +1,32 @@
+101用户登陆服务器
+=================
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+
+   {
+       'username': 'xxx',
+       'password': 'xxx'
+   }
+
+
+*response*
+
+.. code-block:: json
+   :linenos:
+
+
+   {
+     'result': True or False,
+     'data': {
+         'userId': 'xxx',
+         'hasRole': True or False,
+         'characterId': 'xxx'
+     }
+   }
+
+
+

@@ -1,0 +1,32 @@
+103玩家登陆游戏场景
+===================
+
+*request*
+
+.. code-block::
+   :linenos:
+
+    {
+        'userId': 'xxx',
+        'characterId': 'xxx',
+        'sceneType': 'dota' or 'pvp'
+    }
+
+*response*
+
+.. code-block::
+   :linenos:
+
+    {
+        'message': 'xxx',
+        'result': true,
+        'data': {
+            'name': 'xxx',
+            'cid', x,
+            'level': x,
+            'maxexp': x,
+            'exp': x,
+            'coin': xxx,
+            'yuanbao': xxx
+        }
+    }
