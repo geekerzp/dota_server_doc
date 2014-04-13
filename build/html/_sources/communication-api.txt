@@ -17,3 +17,4 @@ APIs
    :maxdepth: 1
 
    apis/101
+   apis/103

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>101用户登陆服务器 &mdash; DotaServerDoc 1.0.1 documentation</title>
+    <title>103玩家登陆游戏场景 &mdash; DotaServerDoc 1.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="DotaServerDoc 1.0.1 documentation" href="../index.html" />
     <link rel="up" title="APIs" href="../communication-api.html" />
-    <link rel="next" title="103玩家登陆游戏场景" href="103.html" />
-    <link rel="prev" title="APIs" href="../communication-api.html" /> 
+    <link rel="next" title="数据" href="../data.html" />
+    <link rel="prev" title="101用户登陆服务器" href="101.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,10 +36,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="103.html" title="103玩家登陆游戏场景"
+          <a href="../data.html" title="数据"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../communication-api.html" title="APIs"
+          <a href="101.html" title="101用户登陆服务器"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>
@@ -53,33 +53,45 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>101用户登陆服务器<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>103玩家登陆游戏场景<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><em>request</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre>{
-    &#39;username&#39;: &#39;xxx&#39;,
-    &#39;password&#39;: &#39;xxx&#39;
-}
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre> {
+     &#39;userId&#39;: &#39;xxx&#39;,
+     &#39;characterId&#39;: &#39;xxx&#39;,
+     &#39;sceneType&#39;: &#39;dota&#39; or &#39;pvp&#39;
+ }
 </pre></div>
 </td></tr></table></div>
 <p><em>response</em></p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre>{
-  &#39;result&#39;: True or False,
-  &#39;data&#39;: {
-      &#39;userId&#39;: &#39;xxx&#39;,
-      &#39;hasRole&#39;: True or False,
-      &#39;characterId&#39;: &#39;xxx&#39;
-  }
-}
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre> {
+     &#39;message&#39;: &#39;xxx&#39;,
+     &#39;result&#39;: true,
+     &#39;data&#39;: {
+         &#39;name&#39;: &#39;xxx&#39;,
+         &#39;cid&#39;, x,
+         &#39;level&#39;: x,
+         &#39;maxexp&#39;: x,
+         &#39;exp&#39;: x,
+         &#39;coin&#39;: xxx,
+         &#39;yuanbao&#39;: xxx
+     }
+ }
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -91,14 +103,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../communication-api.html"
-                        title="previous chapter">APIs</a></p>
+  <p class="topless"><a href="101.html"
+                        title="previous chapter">101用户登陆服务器</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="103.html"
-                        title="next chapter">103玩家登陆游戏场景</a></p>
+  <p class="topless"><a href="../data.html"
+                        title="next chapter">数据</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/apis/101.txt"
+    <li><a href="../_sources/apis/103.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -125,10 +137,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="103.html" title="103玩家登陆游戏场景"
+          <a href="../data.html" title="数据"
              >next</a> |</li>
         <li class="right" >
-          <a href="../communication-api.html" title="APIs"
+          <a href="101.html" title="101用户登陆服务器"
              >previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>
