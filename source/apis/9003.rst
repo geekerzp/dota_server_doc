@@ -7,14 +7,14 @@
    :linenos:
 
     {
-        'characterId': xxx,
-        'roomId': xxx,
-        'target': xxx
+        "characterId": 1,
+        "roomId": 1,
+        "target": 1
     }
 
-#. 'characterId'角色id。
-#. 'roomId'房间id。
-#. 'target'加入方阵，天灾或近卫。
+#. "characterId"角色id。
+#. "roomId"房间id。
+#. "target"加入方阵，天灾或近卫(1为近卫， 2为天灾)。
 
 *response*
 
@@ -22,9 +22,20 @@
    :linenos:
 
     {
-        'result': True or False,
-        'message': xxx
+        "result": true,
+        "message": "xxx"
     }
 
-#. 'result'请求结果。
-#. 'message'请求提示信息。
+#. "result"请求结果。
+#. "message"请求提示信息。
+
+*test data*
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "characterId": 2,
+      "roomId": 1,
+      "target": 2
+   }

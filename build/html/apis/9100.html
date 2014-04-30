@@ -26,7 +26,7 @@
     <link rel="top" title="DotaServerDoc 1.0.1 documentation" href="../index.html" />
     <link rel="up" title="APIs" href="../communication-api.html" />
     <link rel="next" title="9001移动事件" href="9001.html" />
-    <link rel="prev" title="103角色登陆游戏场景" href="103.html" /> 
+    <link rel="prev" title="702英雄进入场景" href="702.html" /> 
   </head>
   <body>
     <div class="related">
@@ -39,7 +39,7 @@
           <a href="9001.html" title="9001移动事件"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="103.html" title="103角色登陆游戏场景"
+          <a href="702.html" title="702英雄进入场景"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>
@@ -60,18 +60,20 @@
 3
 4
 5
-6</pre></div></td><td class="code"><div class="highlight"><pre> {
-     &#39;characterId&#39;: xxx,
-     &#39;roomId&#39;: xxx,
-     &#39;clientTime&#39;: xxx 客户端时间,
-     &#39;virtualTime&#39;: xxx 客户端和服务器同步的虚拟时间
- }
+6</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+     <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+     <span class="nt">&quot;roomId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+     <span class="nt">&quot;clientTime&quot;</span><span class="p">:</span>  <span class="mi">1398873642</span><span class="p">,</span>
+     <span class="nt">&quot;virtualTime&quot;</span><span class="p">:</span> <span class="mi">1398873642</span>
+ <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>&#8216;characterId&#8217;游戏角色id。</li>
-<li>&#8216;roomId&#8217;对战房间id。</li>
-<li>&#8216;virtualTime&#8217;客户端可服务器同步的虚拟时间，首次发送对时包时为0。</li>
+<li>&#8220;characterId&#8221;游戏角色id。</li>
+<li>&#8220;roomId&#8221;对战房间id。</li>
+<li>&#8220;clientTime&#8221;客户端的时间。</li>
+<li>&#8220;virtualTime&#8221;客户端可服务器同步的虚拟时间，首次发送对时包时为0。</li>
+<li>&#8220;clientTime&#8221;和&#8221;virtualTime&#8221;均为timestamp。</li>
 </ol>
 </div>
 
@@ -82,8 +84,8 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="103.html"
-                        title="previous chapter">103角色登陆游戏场景</a></p>
+  <p class="topless"><a href="702.html"
+                        title="previous chapter">702英雄进入场景</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="9001.html"
                         title="next chapter">9001移动事件</a></p>
@@ -119,7 +121,7 @@
           <a href="9001.html" title="9001移动事件"
              >next</a> |</li>
         <li class="right" >
-          <a href="103.html" title="103角色登陆游戏场景"
+          <a href="702.html" title="702英雄进入场景"
              >previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>

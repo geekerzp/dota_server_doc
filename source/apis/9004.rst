@@ -7,10 +7,10 @@
    :linenos:
 
     {
-        'characterId': xxx
+        "characterId": 1
     }
 
-#. 'characterId'角色id。
+#. "characterId"角色id。
 
 *response*
 
@@ -18,13 +18,22 @@
    :linenos:
 
     {
-        'message': 'create room successfully',
-        'result': True,
-        'data': {
-            'roomId': xxx
+        "message": "create room successfully",
+        "result": true,
+        "data": {
+            "roomId": 1
         }
     }
 
-#. 'message'请求提示信息。
-#. 'result'请求结果。
-#. 'roomId'对战房间id。
+#. "message"请求提示信息。
+#. "result"请求结果。
+#. "roomId"对战房间id。
+
+*test data*
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "characterId": 1
+   }

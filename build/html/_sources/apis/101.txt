@@ -8,12 +8,12 @@
 
 
    {
-       'username': 'xxx',
-       'password': 'xxx'
+       "username": "xxx",
+       "password": "xxx"
    }
 
-#. 'username'是游戏用户用户名。
-#. 'password'是游戏用户密码。
+#. "username"是游戏用户用户名。
+#. "password"是游戏用户密码。
 
 *response*
 
@@ -22,16 +22,33 @@
 
 
    {
-     'result': True or False,
-     'data': {
-         'userId': 'xxx',
-         'hasRole': True or False,
-         'characterId': 'xxx'
+     "result": true,
+     "data": {
+         "userId": "xxx",
+         "hasRole": true,
+         "characterId": "xxx"
      }
    }
 
-#. 'result'是请求执行结果。
-#. 'userId'是用户id。
-#. 'hasRole'是用户是否已经创建游戏角色。
-#. 'characterId'是用户游戏角色id。
+#. "result"是请求执行结果。
+#. "userId"是用户id。
+#. "hasRole"是用户是否已经创建游戏角色。
+#. "characterId"是用户游戏角色id。
 
+*test data*
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "username": "test100",
+      "password": "111111"
+   }
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "username": "test101",
+      "password": "111111"
+   }

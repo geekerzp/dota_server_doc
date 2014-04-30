@@ -7,22 +7,22 @@
    :linenos:
 
     {
-        'characterId': xxx,
-        'roomId': xxx,
-        'data': {
-            'timestamp': xxx,
-            'actorId': xxx,
-            'destination': {
-                'x1': xxx,
-                'y1': xxx,
-                'x2': xxx,
-                'y2': xxx
+        "characterId": 1,
+        "roomId": 1,
+        "data": {
+            "timestamp": 1398873642,
+            "actorId": 1,
+            "destination": {
+                "x1": 10,
+                "y1": 12,
+                "x2": 10,
+                "y2": 12
             }
         }
     }
 
-#. 'characterId'角色id。
-#. 'roomId'对战房间id。
-#. 'timestamp'时间戳，和服务器对时后的虚拟时间。
-#. 'actorId'英雄的战场id。
-#. 'destination'目的坐标。
+#. "characterId"角色id。
+#. "roomId"对战房间id。
+#. "timestamp"时间戳，和服务器对时后的虚拟时间。
+#. "actorId"英雄的战场id。
+#. "destination"目的坐标，暂时使用二维数组，后期改为坐标和矢量。

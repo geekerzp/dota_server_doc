@@ -8,12 +8,14 @@
 
 
     {
-        'characterId': xxx,
-        'roomId': xxx,
-        'clientTime': xxx 客户端时间,
-        'virtualTime': xxx 客户端和服务器同步的虚拟时间
+        "characterId": 1,
+        "roomId": 1,
+        "clientTime":  1398873642,
+        "virtualTime": 1398873642
     }
 
-#. 'characterId'游戏角色id。
-#. 'roomId'对战房间id。
-#. 'virtualTime'客户端可服务器同步的虚拟时间，首次发送对时包时为0。
+#. "characterId"游戏角色id。
+#. "roomId"对战房间id。
+#. "clientTime"客户端的时间。
+#. "virtualTime"客户端可服务器同步的虚拟时间，首次发送对时包时为0。
+#. "clientTime"和"virtualTime"均为timestamp。

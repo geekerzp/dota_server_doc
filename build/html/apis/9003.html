@@ -59,32 +59,44 @@
 2
 3
 4
-5</pre></div></td><td class="code"><div class="highlight"><pre> {
-     &#39;characterId&#39;: xxx,
-     &#39;roomId&#39;: xxx,
-     &#39;target&#39;: xxx
- }
+5</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+     <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+     <span class="nt">&quot;roomId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+     <span class="nt">&quot;target&quot;</span><span class="p">:</span> <span class="mi">1</span>
+ <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>&#8216;characterId&#8217;角色id。</li>
-<li>&#8216;roomId&#8217;房间id。</li>
-<li>&#8216;target&#8217;加入方阵，天灾或近卫。</li>
+<li>&#8220;characterId&#8221;角色id。</li>
+<li>&#8220;roomId&#8221;房间id。</li>
+<li>&#8220;target&#8221;加入方阵，天灾或近卫(1为近卫， 2为天灾)。</li>
 </ol>
 <p><em>response</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre> {
-     &#39;result&#39;: True or False,
-     &#39;message&#39;: xxx
- }
+4</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+     <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+     <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span>
+ <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>&#8216;result&#8217;请求结果。</li>
-<li>&#8216;message&#8217;请求提示信息。</li>
+<li>&#8220;result&#8221;请求结果。</li>
+<li>&#8220;message&#8221;请求提示信息。</li>
 </ol>
+<p><em>test data</em></p>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+   <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+   <span class="nt">&quot;roomId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+   <span class="nt">&quot;target&quot;</span><span class="p">:</span> <span class="mi">2</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 
 

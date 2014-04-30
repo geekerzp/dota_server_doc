@@ -1,0 +1,55 @@
+702英雄进入场景
+===============
+
+*request*
+
+.. code-block:: json
+   :linenos:
+
+    {
+      "characterId": 1,
+      "playerId": 1
+    }
+
+#. "characterId"角色id。
+#. "playerId"英雄id。
+
+*response*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        "message": "player enter scene successfully",
+        "result": true,
+        "data": {
+            "power": 56,
+            "coin": 99999999,
+            "name": "\u9ab7\u9ac5\u738b",
+            "exp": 0,
+            "cid": 1000001,
+            "profession": 0,
+            "gas": 30,
+            "level": 1,
+            "yuanbao": 99999999,
+            "maxexp": 218
+        }
+    }
+
+*test data*
+
+.. code-block:: json
+   :linenos:
+
+    {
+        "characterId": 1,
+        "playerId": 1000001
+    }
+
+.. code-block:: json
+   :linenos:
+
+    {
+        "characterId": 2,
+        "playerId": 1000003
+    }

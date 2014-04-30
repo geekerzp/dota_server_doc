@@ -58,15 +58,15 @@
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre>{
-    &#39;username&#39;: &#39;xxx&#39;,
-    &#39;password&#39;: &#39;xxx&#39;
-}
+4</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>&#8216;username&#8217;是游戏用户用户名。</li>
-<li>&#8216;password&#8217;是游戏用户密码。</li>
+<li>&#8220;username&#8221;是游戏用户用户名。</li>
+<li>&#8220;password&#8221;是游戏用户密码。</li>
 </ol>
 <p><em>response</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -76,22 +76,41 @@
 5
 6
 7
-8</pre></div></td><td class="code"><div class="highlight"><pre>{
-  &#39;result&#39;: True or False,
-  &#39;data&#39;: {
-      &#39;userId&#39;: &#39;xxx&#39;,
-      &#39;hasRole&#39;: True or False,
-      &#39;characterId&#39;: &#39;xxx&#39;
-  }
-}
+8</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;hasRole&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>&#8216;result&#8217;是请求执行结果。</li>
-<li>&#8216;userId&#8217;是用户id。</li>
-<li>&#8216;hasRole&#8217;是用户是否已经创建游戏角色。</li>
-<li>&#8216;characterId&#8217;是用户游戏角色id。</li>
+<li>&#8220;result&#8221;是请求执行结果。</li>
+<li>&#8220;userId&#8221;是用户id。</li>
+<li>&#8220;hasRole&#8221;是用户是否已经创建游戏角色。</li>
+<li>&#8220;characterId&#8221;是用户游戏角色id。</li>
 </ol>
+<p><em>test data</em></p>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+   <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;test100&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;111111&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+   <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;test101&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;111111&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 
 

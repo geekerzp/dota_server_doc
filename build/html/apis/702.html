@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>9002选择英雄加入战斗 &mdash; DotaServerDoc 1.0.1 documentation</title>
+    <title>702英雄进入场景 &mdash; DotaServerDoc 1.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="DotaServerDoc 1.0.1 documentation" href="../index.html" />
     <link rel="up" title="APIs" href="../communication-api.html" />
-    <link rel="next" title="9007角色准备" href="9007.html" />
-    <link rel="prev" title="9003角色进入对战房间" href="9003.html" /> 
+    <link rel="next" title="9100时间同步" href="9100.html" />
+    <link rel="prev" title="103角色登陆游戏场景" href="103.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,10 +36,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="9007.html" title="9007角色准备"
+          <a href="9100.html" title="9100时间同步"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="9003.html" title="9003角色进入对战房间"
+          <a href="103.html" title="103角色登陆游戏场景"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>
@@ -53,14 +53,14 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>9002选择英雄加入战斗<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>702英雄进入场景<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><em>request</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
-     <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-     <span class="nt">&quot;playerId&quot;</span><span class="p">:</span> <span class="mi">1</span>
+   <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+   <span class="nt">&quot;playerId&quot;</span><span class="p">:</span> <span class="mi">1</span>
  <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
@@ -69,36 +69,56 @@
 <li>&#8220;playerId&#8221;英雄id。</li>
 </ol>
 <p><em>response</em></p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+     <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;player enter scene successfully&quot;</span><span class="p">,</span>
      <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-     <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span>
+     <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&quot;power&quot;</span><span class="p">:</span> <span class="mi">56</span><span class="p">,</span>
+         <span class="nt">&quot;coin&quot;</span><span class="p">:</span> <span class="mi">99999999</span><span class="p">,</span>
+         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;\u9ab7\u9ac5\u738b&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;exp&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+         <span class="nt">&quot;cid&quot;</span><span class="p">:</span> <span class="mi">1000001</span><span class="p">,</span>
+         <span class="nt">&quot;profession&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+         <span class="nt">&quot;gas&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+         <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+         <span class="nt">&quot;yuanbao&quot;</span><span class="p">:</span> <span class="mi">99999999</span><span class="p">,</span>
+         <span class="nt">&quot;maxexp&quot;</span><span class="p">:</span> <span class="mi">218</span>
+     <span class="p">}</span>
  <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="arabic simple">
-<li>&#8220;result&#8221;请求结果。</li>
-<li>&#8220;message&#8221;请求提示信息。</li>
-</ol>
 <p><em>test data</em></p>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
-   <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-   <span class="nt">&quot;playerId&quot;</span><span class="p">:</span> <span class="mi">1000001</span>
-<span class="p">}</span>
+4</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+     <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+     <span class="nt">&quot;playerId&quot;</span><span class="p">:</span> <span class="mi">1000001</span>
+ <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
-   <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-  <span class="nt">&quot;playerId&quot;</span><span class="p">:</span> <span class="mi">1000003</span>
-<span class="p">}</span>
+4</pre></div></td><td class="code"><div class="highlight"><pre> <span class="p">{</span>
+     <span class="nt">&quot;characterId&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+     <span class="nt">&quot;playerId&quot;</span><span class="p">:</span> <span class="mi">1000003</span>
+ <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -110,14 +130,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="9003.html"
-                        title="previous chapter">9003角色进入对战房间</a></p>
+  <p class="topless"><a href="103.html"
+                        title="previous chapter">103角色登陆游戏场景</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="9007.html"
-                        title="next chapter">9007角色准备</a></p>
+  <p class="topless"><a href="9100.html"
+                        title="next chapter">9100时间同步</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/apis/9002.txt"
+    <li><a href="../_sources/apis/702.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -144,10 +164,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="9007.html" title="9007角色准备"
+          <a href="9100.html" title="9100时间同步"
              >next</a> |</li>
         <li class="right" >
-          <a href="9003.html" title="9003角色进入对战房间"
+          <a href="103.html" title="103角色登陆游戏场景"
              >previous</a> |</li>
         <li><a href="../index.html">DotaServerDoc 1.0.1 documentation</a> &raquo;</li>
           <li><a href="../communication.html" >通信</a> &raquo;</li>

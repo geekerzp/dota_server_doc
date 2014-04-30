@@ -7,9 +7,19 @@
    :linenos:
 
     {
-        'characterId': xxx,
-        'roomId': xxx
+        "characterId": 1,
+        "roomId": 1
     }
 
-#. 'characterId'角色id。
-#. 'roomId'对战房间id。
+#. "characterId"角色id。
+#. "roomId"对战房间id。
+
+*test data*
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "characterId": 2,
+      "roomId": 1
+   }

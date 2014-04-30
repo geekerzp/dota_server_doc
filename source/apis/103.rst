@@ -7,14 +7,14 @@
    :linenos:
 
     {
-        'userId': 'xxx',
-        'characterId': 'xxx',
-        'sceneType': 'dota' or 'pvp'
+        "userId": "xxx",
+        "characterId": "xxx",
+        "sceneType": "dota"
     }
 
-#. 'userId'是用户id。
-#. 'characterId'是用户角色id。
-#. 'sceneType'是游戏场景类型，可选择为'pvp'或者为'dota'。
+#. "userId"是用户id。
+#. "characterId"是用户角色id。
+#. "sceneType"是游戏场景类型，可选择为"pvp"或者为"dota"。
 
 *response*
 
@@ -22,25 +22,45 @@
    :linenos:
 
     {
-        'result': true,
-        'message': 'xxx',
-        'data': {
-            'name': 'xxx',
-            'cid', x,
-            'level': x,
-            'maxexp': x,
-            'exp': x,
-            'coin': xxx,
-            'yuanbao': xxx
+        "result": true,
+        "message": "xxx",
+        "data": {
+            "name": "xxx",
+            "cid": 1,
+            "level": 1,
+            "maxexp": 1,
+            "exp": 1,
+            "coin": 1,
+            "yuanbao": 1
         }
     }
 
-#. 'result'是用户id。
-#. 'message'是请求提示信息。
-#. 'name'是角色昵称。
-#. 'cid'是角色id。
-#. 'level'是角色等级。
-#. 'maxexp'是角色最大经验值。
-#. 'exp'是角色经验值。
-#. 'coin'是金币。
-#. 'yuanbao'是元宝。
+#. "result"是用户id。
+#. "message"是请求提示信息。
+#. "name"是角色昵称。
+#. "cid"是角色id。
+#. "level"是角色等级。
+#. "maxexp"是角色最大经验值。
+#. "exp"是角色经验值。
+#. "coin"是金币。
+#. "yuanbao"是元宝。
+
+*test data*
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "user_id": 1,
+      "character_id": 1,
+      "scene_type": "pvp"
+   }
+
+.. code-block:: json
+   :linenos:
+
+   {
+      "user_id": 2,
+      "character_id": 2,
+      "scene_type": "pvp"
+   }
